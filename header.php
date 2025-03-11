@@ -1,9 +1,9 @@
 
 <?php
 session_start();
-include 'php/config.php'; // Assurez-vous que ce fichier contient la connexion à la base de données
+include 'php/config.php'; 
 
-$count = 0; // Valeur par défaut
+$count = 0; 
 
 if (isset($_SESSION['user_id'])) { 
     $user_id = $_SESSION['user_id'];
@@ -14,7 +14,7 @@ if (isset($_SESSION['user_id'])) {
     $result = $stmt->get_result();
     
     if ($row = $result->fetch_assoc()) {
-        $count = $row['total'] ? $row['total'] : 0; // Si NULL, mettre 0
+        $count = $row['total'] ? $row['total'] : 0; // 
     }
 }
 ?>
