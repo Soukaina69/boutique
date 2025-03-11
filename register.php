@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (empty($errors)) {
-        // Vérifier si l'email existe déjà (requête préparée)
+        // Vérifier si l'email existe déjà 
         $stmt = $conn->prepare("SELECT id FROM utilisateurs WHERE email = ?");
         $stmt->bind_param("s", $email);
         $stmt->execute();
