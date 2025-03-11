@@ -6,7 +6,6 @@ include 'php/config.php'; // Connexion à la base de données
 
 // Vérifier si l'utilisateur est connecté
 if (!isset($_SESSION['user_id'])) {
-    // Rediriger vers la page de connexion si non connecté
     header("Location: account.php");
     exit();
 }
