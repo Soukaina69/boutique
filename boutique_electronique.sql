@@ -34,20 +34,7 @@ CREATE TABLE `messages` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `messages`
---
 
-INSERT INTO `messages` (`id`, `user_id`, `message`, `created_at`) VALUES
-(1, 19, 'la mosika de lafjhhf', '2025-03-10 03:33:28'),
-(2, 19, 'la mmalolkfjjutjffds', '2025-03-10 03:34:49'),
-(3, 19, 'la mmalolkfjjutjffds', '2025-03-10 03:35:23'),
-(4, 19, 'la mmalolkfjjutjffds', '2025-03-10 03:35:29'),
-(5, 19, 'hello, ihave i probleme technique', '2025-03-10 15:45:50');
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `panier`
 --
 
@@ -58,16 +45,7 @@ CREATE TABLE `panier` (
   `quantity` int(11) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `panier`
---
 
-INSERT INTO `panier` (`id`, `user_id`, `product_id`, `quantity`) VALUES
-(15, 19, 102, 1);
-
--- --------------------------------------------------------
-
---
 -- Table structure for table `produits`
 --
 
@@ -196,15 +174,7 @@ CREATE TABLE `utilisateurs` (
   `date_inscription` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `utilisateurs`
---
 
-INSERT INTO `utilisateurs` (`id`, `nom`, `email`, `mot_de_passe`, `date_inscription`) VALUES
-(19, 'mohammmed', 'mohammed.jebrou@uit.ac.ma', '$2y$10$E1I3u8uPSpxbAlN58bCzeOsTn4Qi9pAd3Iq0f9zGRa8LVKYJmAE8m', '2025-03-09 17:17:42'),
-(20, 'mohammed', 'tinyfa@polkaroad.net', '$2y$10$21sgwOba4VWvnn34svZYDu6UiHsCD3Hk0Mf6GoZKtbzXz7Vn.We/m', '2025-03-09 23:30:01');
-
---
 -- Indexes for dumped tables
 --
 
